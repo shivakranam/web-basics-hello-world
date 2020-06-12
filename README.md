@@ -11,6 +11,7 @@ There are more detailed instructions in each section as each tool/technology com
   - Check if you have it installed on your machine already by running one of these commands in the Terminal/Command Prompt:
   - For python >3 (More likely to work on Mac) : `python -m SimpleHTTPServer 8000`
   - For python 3+ (More likely to work on Windows) : `python -m http.server 8000`
+  - If the command works, you will have a python server running on port 8000. To stop the server running, press Ctrl + C in the Terminal/Command Prompt window it's running in.
   - If neither of these work, you may need to [install python](https://www.python.org/)
 - Any plain text editor (one that does not apply formatting), eg:
   - [Atom](https://atom.io/)
