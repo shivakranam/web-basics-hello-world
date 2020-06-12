@@ -3,6 +3,23 @@ A simple web page to show off the basics for getting started with web developmen
 
 Following this readme should introduce you to some techniques for working with APIs, as well as familiarising you with the basics of git, running a simple python server, and playing around with some web technologies to get a basic webpage to display some data from a simple API.
 
+## Tools we will use
+There are more detailed instructions in each section as each tool/technology comes up, however, here's a brief overview:
+- Git (or [GitHub Desktop](https://desktop.github.com/))
+- [Terminal (Mac users)](http://www.wikihow.com/Open-a-Terminal-Window-in-Mac), [Command Prompt (Windows users)](http://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8)
+- Python
+  - Check if you have it installed on your machine already by running one of these commands in the Terminal/Command Prompt:
+  - For python >3 (More likely to work on Mac) : `python -m SimpleHTTPServer 8000`
+  - For python 3+ (More likely to work on Windows) : `python -m http.server 8000`
+  - If neither of these work, you may need to [install python](https://www.python.org/)
+- Any plain text editor (one that does not apply formatting), eg:
+  - [Atom](https://atom.io/)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [Notepad++](https://notepad-plus-plus.org/)
+- HTML (no setup needed)
+- CSS (no setup needed)
+- Plain Javascript (no setup needed)
+
 ## Fork the repo and setup git
 Login to Github if you haven't already (create an account if you need to).
 
@@ -10,7 +27,7 @@ Up the top right of this page you will see a button labelled **Fork**. Clicking 
 
 So now that you have your very own copy of our repo we need to get the code onto your machine. If you are familiar with git you can clone it down however you wish.
 
-If you are not familiar with git I recommend [getting GitHub Desktop from here](https://desktop.github.com/). Its fairly easy to use and is a good option for Windows and Mac users. (At some point though you should absolutely invest some time in learning how to use git via command line/terminal). Find the option to clone a repository in GitHub Desktop. It will ask for a url. On the GitHub page for your forked repo click the **Clone or download** button. Copy the URL from there into the URL field in GitHub Desktop and then clone the repo to your machine.
+If you are not familiar with git, we recommend [getting GitHub Desktop from here](https://desktop.github.com/). Its fairly easy to use and is a good option for Windows and Mac users. (At some point it might be useful if you invest some time to also learn how to use git via command line/terminal). Find the option to clone a repository in GitHub Desktop. It will ask for a url. On the GitHub page for your forked repo click the **Clone or download** button. Copy the URL from there into the URL field in GitHub Desktop and then clone the repo to your machine.
 
 Wooo! If everything went smoothly you should now have a copy of the code on your machine.
 
@@ -19,13 +36,11 @@ We recommend using the simple python server to serve up the webpage locally (You
 
 We need to use the command line to run the python server. [Mac users can use Terminal](http://www.wikihow.com/Open-a-Terminal-Window-in-Mac), [Windows users can use the Command Prompt](http://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8), and Linux users should use whatever terminal app comes with their distro.
 
-In your terminal/command line app navigate to the folder where index.html is located in your cloned repo (If you don't know what to do [Windows users can look here](http://www.digitalcitizen.life/command-prompt-how-use-basic-commands), [Linux and Mac users can look here](http://linuxcommand.org/lc3_lts0020.php)). Then run the command `python -m SimpleHTTPServer 8000`. When that is running you can point your browser to http://localhost:8000 to see the page running.
+In your terminal/command line app navigate to the folder where index.html is located in your cloned repo (If you don't know what to do [Windows users can look here](http://www.digitalcitizen.life/command-prompt-how-use-basic-commands), [Linux and Mac users can look here](http://linuxcommand.org/lc3_lts0020.php)). Then run the command `python -m SimpleHTTPServer 8000` / `python -m http.server 8000`. When that is running you can point your browser to http://localhost:8000 to see the page running.
 
 After you have loaded the page in the browser go back and look at the python server's output in the terminal. You should see a bunch of GET requests for certain files (and maybe you'll see a cheeky 404 error when the browser tries to fetch the non-existant favicon.ico).
 
 _Note: SimpleHTTPServer will default to serving the index.html file at the root url_
-
-_Note: If you are using python 3 then I think you will need to run_ `python -m http.server 8000` _instead._
 
 _Note: You might be able to just open the index.html page in a browser, but most browsers have security features that disable a bunch of things we might need when loading files locally. The python server will help us get around these security restrictions._
 
