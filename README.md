@@ -1,7 +1,7 @@
 # web-basics-hello-world
-A super-basic (and ugly!) web page to show off the basics for SoT hackfest (html, css, js...).
+A simple web page to show off the basics for getting started with web development (html, css, js...).
 
-Following this readme should help to prepare you for a weekend of API hacking by familiarising you with the basics of git, running a simple python server, and playing around with some web technologies to get a basic webpage to display some data from a simple API.
+Following this readme should introduce you to some techniques for working with APIs, as well as familiarising you with the basics of git, running a simple python server, and playing around with some web technologies to get a basic webpage to display some data from a simple API.
 
 ## Fork the repo and setup git
 Login to Github if you haven't already (create an account if you need to).
